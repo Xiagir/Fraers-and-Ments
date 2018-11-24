@@ -1,0 +1,2 @@
+/home/palemaximilian/unity-projects/Fraers-and-Ments-Shared/Fraers-and-Ments/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache
+/home/palemaximilian/unity-projects/Fraers-and-Ments-Shared/Fraers-and-Ments/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache

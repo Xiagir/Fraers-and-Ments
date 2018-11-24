@@ -6,8 +6,8 @@ public class ElevatorController : MonoBehaviour {
 
     public int blocksToTp = 9;
  
-    public GameObject entity;
-    public PlayeerMovement player;
+    
+    public PlayerMovement player;
 
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -17,7 +17,7 @@ public class ElevatorController : MonoBehaviour {
             player.elevatorChecked = true;
         }
         else if (collision.gameObject.tag == "Entity") {
-         
+            Elevate(collision.gameObject);
         }
     }
 
