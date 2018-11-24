@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class ElevatorController : MonoBehaviour {
 
-    public int blocksToTp = 9;
+    int blocksToTp = 9;
  
-    public GameObject entity;
+  
     public PlayeerMovement player;
+    public EntityController entity;
 
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -16,8 +17,9 @@ public class ElevatorController : MonoBehaviour {
         {
             player.elevatorChecked = true;
         }
-        else if (collision.gameObject.tag == "Entity") {
-         
+        else if (collision.gameObject.tag == "Entity") {  
+            if (EntityController.useElevator())
+                Elevate(collision.gameObject);
         }
     }
 

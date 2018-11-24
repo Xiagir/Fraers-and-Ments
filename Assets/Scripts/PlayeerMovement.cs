@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class PlayeerMovement : MonoBehaviour {
 
-
+ 
     public GameObject player;
+    public GameObject entity;
 
     ElevatorController elevator = new ElevatorController();
 
@@ -18,6 +19,7 @@ public class PlayeerMovement : MonoBehaviour {
     private void Start()
     {
         elevatorChecked = false;
+
     }
 
     // Update is called once per frame
@@ -26,7 +28,7 @@ public class PlayeerMovement : MonoBehaviour {
         horizontalMove = Input.GetAxisRaw("Horizontal") * movementSpeed * Time.deltaTime;
         transform.position =  new Vector2(transform.position.x + horizontalMove, transform.position.y);
 
-        if (elevatorChecked == true)
+        if (elevatorChecked)
         {
             if (Input.GetKeyDown(KeyCode.W))
             {
@@ -35,5 +37,8 @@ public class PlayeerMovement : MonoBehaviour {
             }
         }
 
+
     }
+
+    
 }

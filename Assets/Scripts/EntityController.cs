@@ -17,6 +17,16 @@ public class EntityController : MonoBehaviour {
 };
 
     private float[] pointsToSpawn = new float[] {-5,20,40};
+
+
+    static public bool useElevator()
+    {
+        int rng = Random.Range(0, 2);
+        if (rng == 1)
+            return true;
+        else
+            return false;
+    }
 	
 	void Update () {
 
@@ -24,7 +34,6 @@ public class EntityController : MonoBehaviour {
         {
             Vector3 Pos = new Vector3(pointsToSpawn[Random.Range(0,2)] , -3 , 0);
             Instantiate(entity , Pos , Camera.main.transform.rotation);
-  
             entityExists++;
         }
 

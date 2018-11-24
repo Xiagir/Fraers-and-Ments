@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 50731474130637406}
   - component: {fileID: 114054530978624436}
   - component: {fileID: 61935559331058116}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Entity
   m_TagString: Entity
   m_Icon: {fileID: 0}
@@ -37,8 +37,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1727365190099794}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.239, y: -3.014, z: 0}
-  m_LocalScale: {x: 1.7755162, y: 1.7755162, z: 1.7755162}
+  m_LocalPosition: {x: -10.239, y: 23.986, z: 0}
+  m_LocalScale: {x: 1.360331, y: 1.360331, z: 1.360331}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -62,7 +62,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &61935559331058116
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -132,8 +132,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -507287395
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0349e9fd3bfbbc049a327b402ec67985, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
